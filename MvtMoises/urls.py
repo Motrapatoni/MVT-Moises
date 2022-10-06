@@ -19,7 +19,7 @@ from .views import create_person, get_persons
 
 
 urlpatterns = [
-    path('create/<str:name>/<str:last_name>/<int:age>/<str:mail>/', create_person),
+    path('create/<str:name>/<str:lastname>/<int:age>/<str:email>/', create_person),
     path('show-all/', get_persons),
     path('admin/', admin.site.urls),
 ]

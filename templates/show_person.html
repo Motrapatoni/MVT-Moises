@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Familiares</h1>
+    <br>
+    <ol>
+        {% for user in person %}
+            <li>Nombre: {{ user.name}}, Apellido: {{user.last_name}}, Edad: {{user.age}}, Registrado: {{ user.create}},<br>contacto: {{ user.mail}}</li>
+        {% endfor %}
+    </ol>
 </body>
 </html>
